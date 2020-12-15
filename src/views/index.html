@@ -3,12 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primer p&aacute;gina Node.js</title>
+    <title><%= title %></title>
+    <%- include('partials/header.html') %>
 </head>
 <body>
-    <h1>BIENVENIDO A NODE JS! </h1>
-    <script defer>
-        alert('it works!')
-    </script>
+    <!-- Cabezera de pagina-->
+    <%- include('partials/navigation.html') %>
+
+    <div class="container">
+        <h4>BIENVENIDO A NODE JS!</h4>
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <a href="https://open.spotify.com/playlist/6G2V8bzPyrmvO38iX5dCQ8?si=Qi3Q2bSdTDqbHqzUJzI_dg" target="_blank">
+                    <img src="/img/rl-playlist.jpeg" alt="Handpicked Rock Latino" class="animate__animated animate__bounceIn">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="about">
+        <div class="row bg-dark text-white p-5 text-center">
+            <div class="col-sm-6">
+                <i class="fab fa-spotify fa-10x"></i>
+            </div>
+            <div class="col-sm-6">
+                <h3>The most recognized playlist for "Rock en Español"</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quidem, ab temporibus hic quas numquam quo 
+                    ad sequi dolorem tempora quae praesentium consectetur tenetur deserunt molestiae harum aperiam fuga? 
+                    Quis voluptatem dolorem non eligendi? Velit?</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Pie de pagina -->
+    <%- include('partials/footer.html') %>
+
+    <!-- Archivos javascript -->
+    <%- include('partials/jsfiles.html') %>
 </body>
 </html>
